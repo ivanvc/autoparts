@@ -5,12 +5,12 @@ module Autoparts
   module Packages
     class MongoDB < Package
       name 'mongodb'
-      version '2.6.5'
+      version '3.2.4'
       description 'MongoDB: A cross-platform document-oriented NoSQL database system'
       category Category::DATA_STORES
 
-      source_url 'http://fastdl.mongodb.org/linux/mongodb-linux-x86_64-2.6.5.tgz'
-      source_sha1 'd8d793fdd23b784e6d40c3e8e923926ac004a96d'
+      source_url 'https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1404-3.2.4.tgz'
+      source_sha1 '98ab5d1495d50f35823377e5d1784cbf972d928e'
       source_filetype 'tar.gz'
 
       def compile
@@ -20,7 +20,7 @@ module Autoparts
       def install
         prefix_path.parent.mkpath
         FileUtils.rm_rf prefix_path
-        execute 'mv', extracted_archive_path + "mongodb-linux-x86_64-#{version}", prefix_path
+        execute 'mv', extracted_archive_path + "mongodb-linux-x86_64-ubuntu1404-#{version}", prefix_path
       end
 
       def post_install
