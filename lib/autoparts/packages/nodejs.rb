@@ -5,12 +5,12 @@ module Autoparts
   module Packages
     class Nodejs < Package
       name 'nodejs'
-      version '0.12.0'
+      version '4.4.7'
       description "Node.JS: A platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications"
       category Category::PROGRAMMING_LANGUAGES
 
-      source_url 'http://nodejs.org/dist/v0.12.0/node-v0.12.0-linux-x64.tar.gz'
-      source_sha1 '64fb5260a4a0f914b62a80066d7955856a04703a'
+      source_url 'http://nodejs.org/dist/v4.4.7/node-v4.4.7-linux-x64.tar.gz'
+      source_sha1 '22e9556f01b03d45a6fc2be991ea97f091f49a3e'
       source_filetype 'tar.gz'
 
       def install
