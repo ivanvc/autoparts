@@ -5,12 +5,12 @@ module Autoparts
   module Packages
     class Elixir < Package
       name 'elixir'
-      version '1.0.2'
+      version '1.3.2'
       description 'Elixir: A functional, meta-programming aware language built on top of the Erlang VM'
       category Category::PROGRAMMING_LANGUAGES
 
-      source_url 'https://github.com/elixir-lang/elixir/archive/v1.0.2.tar.gz'
-      source_sha1 '844d32979b565de193c2e81c79ec41f3a9737a72'
+      source_url 'https://github.com/elixir-lang/elixir/archive/v1.3.2.tar.gz'
+      source_sha1 '52ad748b6debed964496bb099b74adeeb3d1240c'
       source_filetype 'tar.gz'
 
       depends_on 'erlang'

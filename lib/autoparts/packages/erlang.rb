@@ -5,12 +5,12 @@ module Autoparts
   module Packages
     class Erlang < Package
       name 'erlang'
-      version '17.0'
+      version '18.3'
       description 'Erlang/OTP: A programming language used to build massively scalable soft real-time systems with requirements on high availability'
       category Category::PROGRAMMING_LANGUAGES
 
-      source_url 'https://github.com/erlang/otp/archive/OTP-17.0.tar.gz'
-      source_sha1 'efa0dd17267ff41d47df94978b7573535c0da775'
+      source_url 'https://github.com/erlang/otp/archive/OTP-18.3.tar.gz'
+      source_sha1 '3adbf9ca52b9dff60a343d441dff085569796301'
       source_filetype 'tar.gz'
 
       def compile
